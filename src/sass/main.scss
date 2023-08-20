@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './variables';
+@import './mixins';
+
+.App {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#text {
+	&:before {
+		content: '“';
+		position: relative;
+		top: 0.25em;
+		left: -0.1em;
+		font-size: 2em;
+	}
+}
+
+#author {
+	&:before {
+		content: '–';
+		margin-right: 0.5em;
+	}
+}
